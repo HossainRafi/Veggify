@@ -11,7 +11,7 @@ export const DesktopNav = ({ menuItems, logo }) => {
       <ul className="flex gap-7">
         {menuItems?.map((menu, index) => (
           <li key={index}>
-            <Link to="/" className="font-medium capitalize ">{menu} </Link>
+            <Link to={menu} className="font-medium capitalize ">{menu} </Link>
           </li>
         ))}
       </ul>
