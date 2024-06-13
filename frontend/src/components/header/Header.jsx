@@ -5,7 +5,7 @@ import logo from "/logo.svg"
 const Header = () => {
   const [hideLeft, setHideLeft] = useState("-left-[1000px]");
 
-  // ======== Navigation Menu =========
+  // ======== Nav Menu List =========
   const menuItems = ["recipes", "resources", "about", "contact"];
 
   const onOpen = () => {
