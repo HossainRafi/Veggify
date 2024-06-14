@@ -37,6 +37,16 @@ const MobileNav = ({ menuItems, logo, onClose, hideLeft, onOpen }) => {
                 </li>
               ))}
             </ul>
+
+            {/* login & signup button */}
+            <ul className="flex items-center gap-4 font-medium mt-8">
+              <li className="text-secondary px-4 py-2 rounded border-2">
+                Log In
+              </li>
+              <li className="text-secondary px-4 py-2 rounded border-2">
+                Sign up
+              </li>
+            </ul>
           </div>
         </div>
       </div>
