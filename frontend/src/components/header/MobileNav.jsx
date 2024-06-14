@@ -1,5 +1,6 @@
 import { FaBars } from "react-icons/fa6";
 import { RiCloseCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const MobileNav = ({ menuItems, logo, onClose, hideLeft, onOpen }) => {
   return (
@@ -21,8 +22,23 @@ const MobileNav = ({ menuItems, logo, onClose, hideLeft, onOpen }) => {
           <button onClick={onClose} className="absolute right-32 top-32">
             <RiCloseCircleLine className="w-9 h-9" />
           </button>
+
+          {/* mobile menu */}
+          <div>
+            <ul className="flex flex-col gap-5">
+              {menuItems?.map((menu, index) => (
+                <li key={index}>
+                  <Link
+                    to={menu}
+                    className="font-medium capitalize text-secondary text-2xl"
+                  >
+                    {menu}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        
       </div>
     </>
   );
