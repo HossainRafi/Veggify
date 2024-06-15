@@ -11,15 +11,24 @@ export const DesktopNav = ({ menuItems, logo }) => {
       <ul className="flex gap-7">
         {menuItems?.map((menu, index) => (
           <li key={index}>
-            <Link to={menu} className="font-medium capitalize ">{menu} </Link>
+            <Link
+              to={menu}
+              className="font-medium capitalize "
+            >
+              {menu}{" "}
+            </Link>
           </li>
         ))}
       </ul>
 
       {/* login & signup button */}
       <ul className="flex items-center gap-4 font-medium">
-        <li className="text-secondary px-4 py-2 rounded border-2">Log In</li>
-        <li className="text-secondary px-4 py-2 rounded border-2">Sign up</li>
+        <li className="text-secondary px-4 py-2 rounded border-2 cursor-pointer">
+          Log In
+        </li>
+        <li className="text-secondary px-4 py-2 rounded border-2 cursor-pointer">
+          Sign up
+        </li>
       </ul>
     </div>
   );
