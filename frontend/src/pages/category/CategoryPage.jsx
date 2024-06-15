@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { CategoryWrapper } from "./CategoryWrapper";
 
 export const CategoryPage = () => {
   const { category } = useParams();
@@ -8,6 +9,7 @@ export const CategoryPage = () => {
       <h1 className="text-center text-3xl py-10 font-semibold text-secondary sm:text-6xl sm:leading-relaxed capitalize">
         {category}
       </h1>
+      <CategoryWrapper/>
     </div>
   );
 };
