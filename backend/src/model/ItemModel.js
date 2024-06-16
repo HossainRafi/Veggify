@@ -48,3 +48,42 @@ const moreSchema = new Schema({
     required: true,
   },
 });
+
+// item details
+const ItemSchema = new Schema({
+  menuId: {
+    type: Number,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  thumbnail_image: {
+    type: String,
+    required: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  instructions: {
+    type: String,
+    required: true,
+  },
+  tags: [String],
+  ingredients: {
+    type: [ingredientSchema],
+    required: true,
+  },
+
+  comments: {
+    type: [commentSchema],
+    required: true,
+  },
+
+  more: {
+    type: [moreSchema],
+    required: true,
+  },
+});
