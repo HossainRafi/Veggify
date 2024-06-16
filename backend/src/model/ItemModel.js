@@ -25,4 +25,26 @@ const commentSchema = new Schema({
   },
 });
 
-
+// more details
+const moreSchema = new Schema({
+  prep_time: {
+    type: String,
+    required: true,
+  },
+  cooking_time: {
+    type: String,
+    required: true,
+  },
+  servings: {
+    type: String,
+    required: true,
+  },
+  difficulty: {
+    type: String,
+    required: true,
+  },
+  source: {
+    type: String,
+    required: true,
+  },
+});
