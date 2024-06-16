@@ -4,10 +4,17 @@ const mongoose = require("mongoose");
 const app = express();
 const port = process.env.PORT || 5000;
 
+
+// hossainrafi71
+// 2zlp9QzuO4cXQiam
+
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/test");
+  // mongodb connection
+  await mongoose.connect(
+    "mongodb+srv://hossainrafi71:2zlp9QzuO4cXQiam@veggify.zvv7zdi.mongodb.net/?retryWrites=true&w=majority&appName=veggify"
+  );
 
   app.get("/", (req, res) => {
     res.send("Veggify Recipe App Server Is Running !!");
@@ -21,3 +28,4 @@ app.listen(port, () => {
     ---------------------------- APP IS LISTENING ON PORT ${port} -----------------------------
 ================================================================================================= `);
 });
+
