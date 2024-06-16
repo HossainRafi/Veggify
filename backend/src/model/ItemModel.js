@@ -87,3 +87,7 @@ const ItemSchema = new Schema({
     required: true,
   },
 });
+
+const Item = mongoose.model("Item", ItemSchema);
+
+module.exports = Item;
