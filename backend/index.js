@@ -31,6 +31,9 @@ main()
   )
   .catch((err) => console.log(err));
 
+  const ItemRoutes=require('./src/routes/itemRoute')
+  app.use("/api", ItemRoutes);
+
 // server running or not
 app.listen(port, () => {
   console.log(`=================================================================================================
