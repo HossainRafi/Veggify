@@ -37,7 +37,7 @@ const ItemRoutes = require("./src/routes/itemRoute");
 const CategoryRoutes = require("./src/routes/categoryRoute");
 
 app.use("/api", ItemRoutes);
-app.use("/api/", CategoryRoutes);
+app.use("/api", CategoryRoutes);
 
 // server running or not
 app.listen(port, () => {

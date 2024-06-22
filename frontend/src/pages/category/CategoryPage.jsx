@@ -1,14 +1,14 @@
 import { useParams } from "react-router-dom";
 import { CategoryWrapper } from "./CategoryWrapper";
 import { useEffect, useState } from "react";
-import { axios } from "axios";
+import axios from "axios";
 
 export const CategoryPage = () => {
   const { category } = useParams();
+  console.log(category);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
 
   // get search results
   useEffect(() => {
@@ -23,6 +23,7 @@ export const CategoryPage = () => {
         setError(error.message || "Error loading categories");
       }
     };
+    fetchCategoryData();
   }, [category]);
 
   return (
@@ -31,6 +32,11 @@ export const CategoryPage = () => {
         {category}
       </h1>
       <CategoryWrapper />
+
+      {/* search result list */}
+      <ul>
+        {items && items.map((item) => <li key={item._id}>{item.name}</li>)}
+      </ul>
     </div>
   );
 };
