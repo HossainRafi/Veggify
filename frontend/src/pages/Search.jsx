@@ -60,6 +60,11 @@ export const Search = () => {
           className="outline-none w-full placeholder:text-neutral-500"
         />
       </div>
+
+      {/* search result list */}
+      <ul>
+        {results && results.map((item) => <li key={item._id}>{item.name}</li>)}
+      </ul>
     </div>
   );
 };
