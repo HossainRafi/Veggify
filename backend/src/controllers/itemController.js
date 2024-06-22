@@ -20,8 +20,20 @@ const getSearchedItems = async (req, res) => {
   }
 };
 
+// get single item
+const getSingleItem = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const item = await Item.findById(id);
+    res.json(item);
+  } catch (error) {
+    res.status(500).json({ message: "No items found !" });
+  }
+};
+
 // exports
 module.exports = {
   getAllItems,
   getSearchedItems,
+  getSingleItem,
 };
