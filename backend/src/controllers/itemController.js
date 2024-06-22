@@ -12,7 +12,7 @@ const getSearchedItems = async (req, res) => {
   try {
     let items;
     if (q) {
-      items = await Item.find({ name: { $regex: q, $option: "i" } });
+      items = await Item.find({ name: { $regex: q, $options: "i" } });
     }
     res.status(200).json(items);
   } catch (error) {
