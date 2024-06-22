@@ -6,6 +6,7 @@ import App from "./App";
 import Home from "./pages/home/Home";
 import { ErrorPage } from "./components/ErrorPage";
 import { CategoryPage } from "./pages/category/CategoryPage";
+import { Search } from "./pages/Search";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/categories/:category",
         element: <CategoryPage />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
       },
     ],
   },
