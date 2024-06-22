@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const ItemController = require("../controllers/itemController");
 
-router.get("/", (req, res) => {
-  res.send("From item routes.........!!");
-});
+router.get("/", ItemController.getAllItems);
 
 module.exports = router;
