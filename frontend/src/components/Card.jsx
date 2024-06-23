@@ -43,7 +43,7 @@ export const Card = ({ item }) => {
 
               <div className="flex items-center py-2 mt-6">
                 <GoClock />
-                <span className="ml-2">10 minutes</span>
+                <span className="ml-2">{item?.more[0].prep_time}</span>
               </div>
             </div>
           </div>
