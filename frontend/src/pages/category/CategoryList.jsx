@@ -37,7 +37,7 @@ export const CategoryList = () => {
         name="drinks"
         href="/categories/drinks"
         bgColor="#ffeae3"
-        color="#fo493e"
+        color="#f0493e"
       />
     </div>
   );
