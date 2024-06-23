@@ -32,7 +32,8 @@ export const SingleItems = () => {
               combines eggs cooked to perfection, optionally filled with your
               choice of cheese, vegetables, or meats
             </p>
-
+            
+            {/* preparation time section */}
             <article className="bg-rose-50 mt-6 p-5 rounded-xl">
               <h2 className="text-xl font-semibold ml-2">Preparation Time</h2>
               <ul className="list-disc mt-3 ml-8 text-lg marker:text-orange-500">
