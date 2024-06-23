@@ -4,6 +4,7 @@ import { AboutSection } from "./AboutSection";
 import { FeaturedSection } from "./FeaturedSection";
 import LatestRecipe from "./LatestRecipe";
 import { NewsLetter } from "./NewsLetter";
+import { Sponsor } from "./Sponsor";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <LatestRecipe />
         <NewsLetter />
         <AboutSection />
+        <Sponsor />
       </div>
     </>
   );
