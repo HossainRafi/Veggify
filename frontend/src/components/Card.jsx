@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { GoClock } from "react-icons/go";
 
 export const Card = ({ item }) => {
   const categoryStyles = {
@@ -14,11 +15,12 @@ export const Card = ({ item }) => {
     return categoryStyles[category] || categoryStyles.default;
   };
   const categoryStyle = getCategoryStyle(item?.category);
+
   return (
     <div className="container mx-auto flex justify-center md:justify-start">
       <div className="max-w-sm">
         {/* item card */}
-        <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500">
+        <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
           <img src={item?.thumbnail_image} className="rounded-t-lg" />
           <div className="py-6 px-5 rounded-lg bg-white">
             <Link to={"/items/${item._id}"}>
@@ -28,7 +30,7 @@ export const Card = ({ item }) => {
             </Link>
 
             {/* category and reading time */}
-            <div>
+            <div className="flex justify-between items-center flex-wrap">
               <button
                 className={`mt-6 py-2 px-4 font-medium rounded-lg shadow-md hover:shadow-lg transition duration-300`}
                 style={{
@@ -38,6 +40,11 @@ export const Card = ({ item }) => {
               >
                 {item?.category}
               </button>
+
+              <div className="flex items-center py-2 mt-6">
+                <GoClock />
+                <span className="ml-2">10 minutes</span>
+              </div>
             </div>
           </div>
         </div>
