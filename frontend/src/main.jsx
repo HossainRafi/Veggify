@@ -10,6 +10,7 @@ import { Search } from "./pages/Search";
 import { SingleItems } from "./pages/items/SingleItems";
 import { Recipies } from "./pages/items/Recipies";
 import { Resources } from "./pages/resources/Resources";
+import { About } from "./pages/about/About";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/resources",
         element: <Resources />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
