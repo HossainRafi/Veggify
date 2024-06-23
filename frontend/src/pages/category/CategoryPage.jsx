@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { CategoryWrapper } from "./CategoryWrapper";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Card } from "../../components/Card";
 
 export const CategoryPage = () => {
   const { category } = useParams();
@@ -34,8 +35,8 @@ export const CategoryPage = () => {
       <CategoryWrapper />
 
       {/* search result list */}
-      <ul>
-        {items && items.map((item) => <li key={item._id}>{item.name}</li>)}
+      <ul className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {items && items.map((item) => <Card item={item} key={item._id} />)}
       </ul>
     </div>
   );
