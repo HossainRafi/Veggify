@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import { ErrorPage } from "./components/ErrorPage";
 import { CategoryPage } from "./pages/category/CategoryPage";
 import { Search } from "./pages/Search";
+import { SingleItems } from "./pages/items/SingleItems";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <Search />,
+      },
+      {
+        path: "/items/:id",
+        element: <SingleItems />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/api/items/${params.id}`),
       },
     ],
   },

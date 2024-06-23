@@ -6,7 +6,6 @@ import { Card } from "../../components/Card";
 
 export const CategoryPage = () => {
   const { category } = useParams();
-  console.log(category);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
