@@ -8,7 +8,7 @@ export const FeaturedSection = () => {
         <div className="absolute top-4 right-4 bg-white text-secondary px-3 py-1 rounded-md uppercase tracking-wider">
           Featured Recipe
         </div>
-        <img src={Featuredimg} className="rounded-lg" />
+        <img src={Featuredimg} className="rounded-lg cursor-pointer" />
       </div>
 
       {/* featured text div */}

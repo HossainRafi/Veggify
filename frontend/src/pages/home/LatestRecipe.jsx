@@ -17,7 +17,7 @@ export default function LatestRecipe() {
 
   return (
     <div className="px-5 xl:px-10 py-16">
-      <h2 className="text-3xl font-semibold text-secondary sm:text-5xl sm:leading-relaxed">
+      <h2 className="text-3xl font-semibold text-secondary sm:text-5xl sm:leading-relaxed mb-10">
         Latest Recipes
       </h2>
 
