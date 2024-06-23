@@ -2,6 +2,7 @@ import { Hero } from "../../components/Hero";
 import { CategoryWrapper } from "../category/CategoryWrapper";
 import { FeaturedSection } from "./FeaturedSection";
 import LatestRecipe from "./LatestRecipe";
+import { NewsLetter } from "./NewsLetter";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         {/* other components */}
         <FeaturedSection />
         <LatestRecipe />
+        <NewsLetter />
       </div>
     </>
   );
