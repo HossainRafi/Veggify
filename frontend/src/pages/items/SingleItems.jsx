@@ -1,13 +1,20 @@
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 export const SingleItems = () => {
   const item = useLoaderData();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // calculating total time
   const extractNumber = (timeString) => {
     let timeArray = timeString.split(" ");
     return parseInt(timeArray[0]);
   };
+
+  // extract number
   let prepTimeMinutes = extractNumber(item?.more[0].prep_time);
   let cookTimeMinutes = extractNumber(item?.more[0].cook_time);
   const totalTimeMinutes = prepTimeMinutes + cookTimeMinutes;
@@ -61,15 +68,13 @@ export const SingleItems = () => {
             {/* ingredients section */}
             <div className="mt-5">
               <h3 className="text-xl font-semibold ml-2">Ingredients</h3>
-              <ul className="list-disc marker:text-blue-500 mt-4 ml-6 text-secondary marker:align-middle">
-                {
-                  item?.ingredients.map((ingredient, index)=>(
-                    <li key={index} className="pl-4 mt-2">
-                      <span>{ingredient?.name}:</span>
-                      <span> {ingredient?.quantity}</span>
-                    </li>
-                  ))
-                }
+              <ul className="list-disc marker:text-orange-500 mt-4 ml-6 text-secondary marker:align-middle">
+                {item?.ingredients.map((ingredient, index) => (
+                  <li key={index} className="pl-4 mt-2">
+                    <span>{ingredient?.name}:</span>
+                    <span> {ingredient?.quantity}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
