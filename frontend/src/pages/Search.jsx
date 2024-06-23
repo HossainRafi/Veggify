@@ -3,8 +3,10 @@ import { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Card } from "../components/Card";
 
 export const Search = () => {
+  // states
   const searchText = useParams();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -62,8 +64,8 @@ export const Search = () => {
       </div>
 
       {/* search result list */}
-      <ul>
-        {results && results.map((item) => <li key={item._id}>{item.name}</li>)}
+      <ul className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {results && results.map((item) => <Card key={item._id} item={item} />)}
       </ul>
     </div>
   );
