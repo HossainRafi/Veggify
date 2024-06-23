@@ -32,10 +32,10 @@ export const SingleItems = () => {
               combines eggs cooked to perfection, optionally filled with your
               choice of cheese, vegetables, or meats
             </p>
-            
+
             {/* preparation time section */}
             <article className="bg-rose-50 mt-6 p-5 rounded-xl">
-              <h2 className="text-xl font-semibold ml-2">Preparation Time</h2>
+              <h3 className="text-xl font-semibold ml-2">Preparation Time</h3>
               <ul className="list-disc mt-3 ml-8 text-lg marker:text-orange-500">
                 <li className="pl-3">
                   <p>
@@ -57,6 +57,21 @@ export const SingleItems = () => {
                 </li>
               </ul>
             </article>
+
+            {/* ingredients section */}
+            <div className="mt-5">
+              <h3 className="text-xl font-semibold ml-2">Ingredients</h3>
+              <ul className="list-disc marker:text-blue-500 mt-4 ml-6 text-secondary marker:align-middle">
+                {
+                  item?.ingredients.map((ingredient, index)=>(
+                    <li key={index} className="pl-4 mt-2">
+                      <span>{ingredient?.name}:</span>
+                      <span> {ingredient?.quantity}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
           </div>
         </div>
       </article>
