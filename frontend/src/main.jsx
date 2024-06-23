@@ -1,6 +1,6 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/home/Home";
@@ -8,6 +8,7 @@ import { ErrorPage } from "./components/ErrorPage";
 import { CategoryPage } from "./pages/category/CategoryPage";
 import { Search } from "./pages/Search";
 import { SingleItems } from "./pages/items/SingleItems";
+import { Recipies } from "./pages/items/Recipies";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         element: <SingleItems />,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/api/items/${params.id}`),
+      },
+      {
+        path: "/recipes",
+        element: <Recipies />,
       },
     ],
   },
