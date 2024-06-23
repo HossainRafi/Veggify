@@ -1,5 +1,6 @@
 import { Hero } from "../../components/Hero";
 import { CategoryWrapper } from "../category/CategoryWrapper";
+import { FeaturedSection } from "./FeaturedSection";
 
 const Home = () => {
   return (
@@ -9,6 +10,9 @@ const Home = () => {
           <Hero />
           <CategoryWrapper />
         </div>
+
+        {/* other components */}
+        <FeaturedSection />
       </div>
     </>
   );
