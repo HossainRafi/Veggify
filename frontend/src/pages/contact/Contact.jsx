@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section className="px-6 lg:px-12 py-20">
+    <section className="px-6 lg:px-12">
       <div id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
 
@@ -11,7 +11,7 @@ export const Contact = () => {
                 Get in Touch
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-xl">
-                Do not hesitate. Feel free to contact with me
+                Do not hesitate. Feel free to contact with us
               </p>
             </div>
           </div>
