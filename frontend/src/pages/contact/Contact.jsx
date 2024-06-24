@@ -3,7 +3,6 @@ export const Contact = () => {
     <section className="px-6 lg:px-12">
       <div id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-
           {/* contact heading */}
           <div className="mb-4">
             <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -19,7 +18,6 @@ export const Contact = () => {
           {/* contact section */}
           <div className="flex items-stretch justify-center">
             <div className="grid md:grid-cols-2">
-              
               {/* contact left */}
               <div className="h-full pr-6">
                 <p className="mt-3 mb-12 text-lg text-gray-800">
@@ -128,7 +126,7 @@ export const Contact = () => {
                           id="name"
                           autoComplete="given-name"
                           placeholder="Your name"
-                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none"
+                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none border-none"
                           name="name"
                         />
                       </div>
@@ -142,7 +140,7 @@ export const Contact = () => {
                           id="email"
                           autoComplete="email"
                           placeholder="Your email address"
-                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none"
+                          className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none border-none"
                           name="email"
                         />
                       </div>
@@ -158,7 +156,7 @@ export const Contact = () => {
                         cols="30"
                         rows="5"
                         placeholder="Write your message..."
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none resize-none"
+                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0 outline-none resize-none border-none"
                       ></textarea>
                     </div>
                   </div>
