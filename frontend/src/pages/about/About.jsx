@@ -2,18 +2,9 @@ export const About = () => {
   return (
     <section className="px-6 lg:px-12 py-20">
       <h1 className="text-3xl font-semibold text-secondary sm:text-5xl sm:leading-relaxed text-center">
-        About
+        Know Our Team
       </h1>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-          <p className="inline-block px-3 py-px mb-4 text-lg font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Know Our Team
-          </p>
-          <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium
-          </p>
-        </div>
         <div className="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
           <div className="grid sm:grid-cols-3">
             <div className="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
