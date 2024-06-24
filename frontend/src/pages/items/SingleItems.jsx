@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 export const SingleItems = () => {
   const item = useLoaderData();
 
+  // load from top of the page
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

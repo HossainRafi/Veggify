@@ -16,6 +16,11 @@ export const Recipies = () => {
     getLatestItems();
   }, []);
 
+  // load from top of the page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="px-6 py-20 lg:px-12">
       <h1 className="text-3xl font-semibold text-secondary sm:text-5xl sm:leading-relaxed mb-10 text-center">
