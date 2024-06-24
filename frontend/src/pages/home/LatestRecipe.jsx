@@ -33,7 +33,7 @@ export default function LatestRecipe() {
       </div>
 
       <div className="sm:w-64 mx-auto mt-16">
-        <Link to="/recipies">
+        <Link to="/recipes">
           <button className="py-4 px-8 hover:bg-btnColor text-secondary hover:text-white w-full transition ease-in duration-200 text-center text-base font-semibold border border-[#9c702a] focus:outline-none rounded-lg">
             View Recipes
           </button>
