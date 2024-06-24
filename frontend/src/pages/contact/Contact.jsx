@@ -1,10 +1,9 @@
-import React from "react";
-
 export const Contact = () => {
   return (
     <section className="px-6 lg:px-12 py-20">
       <div id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+
           {/* contact heading */}
           <div className="mb-4">
             <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -20,6 +19,7 @@ export const Contact = () => {
           {/* contact section */}
           <div className="flex items-stretch justify-center">
             <div className="grid md:grid-cols-2">
+              
               {/* contact left */}
               <div className="h-full pr-6">
                 <p className="mt-3 mb-12 text-lg text-gray-800">

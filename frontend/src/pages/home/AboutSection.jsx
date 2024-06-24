@@ -1,4 +1,4 @@
-import Aboutimg from "../../assets/about-image.jpg";
+import AboutImg from "../../assets/about-image.jpg";
 
 export const AboutSection = () => {
   return (
@@ -25,7 +25,7 @@ export const AboutSection = () => {
 
       {/* about image div */}
       <div>
-        <img src={Aboutimg} className="rounded-lg cursor-pointer" />
+        <img src={AboutImg} className="rounded-lg cursor-pointer" />
       </div>
     </div>
   );
