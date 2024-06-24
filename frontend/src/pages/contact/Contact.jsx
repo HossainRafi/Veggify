@@ -162,6 +162,16 @@ export const Contact = () => {
                       ></textarea>
                     </div>
                   </div>
+
+                  {/* contact btn */}
+                  <div className="text-center">
+                    <button
+                      type="submit"
+                      className="py-2 px-8 hover:bg-btnColor text-secondary hover:text-white w-full transition ease-in duration-200 text-center text-base font-semibold border border-[#9c702a] focus:outline-none rounded-lg"
+                    >
+                      Send Message
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
