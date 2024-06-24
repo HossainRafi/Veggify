@@ -21,7 +21,9 @@ export const Card = ({ item }) => {
       <div className="max-w-sm">
         {/* item card */}
         <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg cursor-pointer">
-          <img src={item?.thumbnail_image} className="rounded-t-lg" />
+          <Link to={`/items/${item._id}`}>
+            <img src={item?.thumbnail_image} className="rounded-t-lg" />
+          </Link>
           <div className="py-6 px-5 rounded-lg bg-white">
             <Link to={`/items/${item._id}`}>
               <h1 className="text-gray-700 font-bold text-2xl mb-8 hover:text-gray-900 hover:cursor-pointer">
