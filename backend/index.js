@@ -4,9 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 const port = process.env.PORT || 5000;
-
-// hossainrafi71
-// 2zlp9QzuO4cXQiam
+const dotenv = require("dotenv").config();
 
 // middleware
 app.use(express.json());
@@ -14,9 +12,7 @@ app.use(cors());
 
 // connecting mongodb
 async function main() {
-  await mongoose.connect(
-    "mongodb+srv://hossainrafi71:2zlp9QzuO4cXQiam@veggify.zvv7zdi.mongodb.net/veggify?retryWrites=true&w=majority&appName=veggify"
-  );
+  await mongoose.connect(process.env.DATABASE_URI);
 
   app.get("/", (req, res) => {
     res.send("Veggify Recipe App Server Is Running !!");
