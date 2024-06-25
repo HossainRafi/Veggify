@@ -22,6 +22,7 @@
 - Different design for different filter options
 
 ## Project Images:
-![app image](https://i.ibb.co/FH9CGvh/1.png)
-![app image](https://i.ibb.co/yymbQcq/2.png)
-![app image](https://i.ibb.co/DVBSQft/3.png)
+![app image](https://i.ibb.co/wzr2NKj/img-1.png)
+![app image](https://i.ibb.co/rcCths3/img-2.png)
+![app image](https://i.ibb.co/jw2JzvM/img-3.png)
+![app image](https://i.ibb.co/SBVshWY/img-4.png)
