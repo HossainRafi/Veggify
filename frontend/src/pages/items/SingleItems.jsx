@@ -78,6 +78,28 @@ export const SingleItems = () => {
                 ))}
               </ul>
             </div>
+
+            {/* instruction section */}
+            <div className="mt-5">
+              <h3 className="text-xl font-semibold ml-2">Instruction</h3>
+              <ol className="mt-4 ml-6 text-secondary marker:align-middle">
+                <li className="mb-2">
+                  1. Cook spaghetti in boiling water until al dente
+                </li>
+                <li className="mb-2">
+                  2. In a separate pan, fry bacon until crisp
+                </li>
+                <li className="mb-2">
+                  3. Beat eggs and mix in grated Parmesan cheese
+                </li>
+                <li className="mb-2">4. Drain spaghetti and mix with bacon</li>
+                <li className="mb-2">
+                  5. Pour egg and cheese mixture over spaghetti and toss until
+                  coated
+                </li>
+                <li>6. Serve immediately with a sprinkle of black pepper</li>
+              </ol>
+            </div>
           </div>
         </div>
       </article>
