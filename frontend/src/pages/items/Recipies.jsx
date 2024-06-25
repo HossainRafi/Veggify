@@ -10,7 +10,9 @@ export const Recipies = () => {
   // getting data
   useEffect(() => {
     const getLatestItems = async () => {
-      const response = await axios.get("http://localhost:5000/api/all-items");
+      const response = await axios.get(
+        `${import.meta.env.VITE_SERVER_LINK}/api/all-items`
+      );
       setItems(response.data);
     };
     getLatestItems();

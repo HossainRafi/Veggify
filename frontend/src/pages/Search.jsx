@@ -26,9 +26,12 @@ export const Search = () => {
     const fetchItems = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/api/items`, {
-          params: { q: query },
-        });
+        const response = await axios.get(
+          `${import.meta.env.VITE_SERVER_LINK}/api/items`,
+          {
+            params: { q: query },
+          }
+        );
         setResults(response.data);
       } catch (err) {
         setError(err.message || "Error fetching data");

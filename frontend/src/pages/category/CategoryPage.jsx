@@ -16,7 +16,7 @@ export const CategoryPage = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/categories/${category}`
+          `${import.meta.env.VITE_SERVER_LINK}/api/categories/${category}`
         );
         setItems(response.data);
       } catch (error) {

@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         path: "/items/:id",
         element: <SingleItems />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/api/items/${params.id}`),
+          fetch(`${import.meta.env.VITE_SERVER_LINK}/api/items/${params.id}`),
       },
       {
         path: "/recipes",
