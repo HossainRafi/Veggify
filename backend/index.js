@@ -26,6 +26,7 @@ main()
   )
   .catch((err) => console.log(err));
 
+  
 // routes
 const ItemRoutes = require("./src/routes/itemRoute");
 const CategoryRoutes = require("./src/routes/categoryRoute");
