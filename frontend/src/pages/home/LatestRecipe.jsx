@@ -30,7 +30,7 @@ export default function LatestRecipe() {
             .slice(0, 8)
             .map((item, index) => <Card key={item._id} item={item} />)
         ) : (
-          <p>Loading........</p>
+          <p className="text-3xl md:ml-[500px] md:py-40">Loading........</p>
         )}
       </div>
 
