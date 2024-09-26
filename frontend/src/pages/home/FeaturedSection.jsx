@@ -1,4 +1,4 @@
-import Featuredimg from "../../assets/featured.webp";
+import Featuredimg from "../../assets/featured.jpg";
 
 export const FeaturedSection = () => {
   return (
